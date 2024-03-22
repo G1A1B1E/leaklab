@@ -95,102 +95,50 @@
 
 
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-<style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-/* Main styles */
- .text {
-	 fill: none;
-	 stroke-width: 3;
-	 stroke-linejoin: round;
-	 stroke-dasharray: 70 330;
-	 stroke-dashoffset: 0;
-	 -webkit-animation: stroke 6s infinite linear;
-	 animation: stroke 6s infinite linear;
-}
- .text:nth-child(5n + 1) {
-	 stroke: #f2385a;
-	 -webkit-animation-delay: -1.2s;
-	 animation-delay: -1.2s;
-}
- .text:nth-child(5n + 2) {
-	 stroke: #f5a503;
-	 -webkit-animation-delay: -2.4s;
-	 animation-delay: -2.4s;
-}
- .text:nth-child(5n + 3) {
-	 stroke: #e9f1df;
-	 -webkit-animation-delay: -3.6s;
-	 animation-delay: -3.6s;
-}
- .text:nth-child(5n + 4) {
-	 stroke: #56d9cd;
-	 -webkit-animation-delay: -4.8s;
-	 animation-delay: -4.8s;
-}
- .text:nth-child(5n + 5) {
-	 stroke: #3aa1bf;
-	 -webkit-animation-delay: -6s;
-	 animation-delay: -6s;
-}
- @-webkit-keyframes stroke {
-	 100% {
-		 stroke-dashoffset: -400;
-	}
-}
- @keyframes stroke {
-	 100% {
-		 stroke-dashoffset: -400;
-	}
-}
-/* Other styles */
- html, body {
-	 height: 100%;
-}
- body {
-	 background: #111;
-	 background-size: 0.2em 100%;
-	 font: 5em Open Sans, Impact;
-	 text-transform: uppercase;
-	 margin: 0;
-}
- svg {
-	 position: absolute;
-	 width: 100%;
-	 height: 100%;
-}
-</style>
-<style>
-#buttons{
-    height: 300px;
-    overflow: scroll;
+body {
+	background-color: #111;
 }
 
-#t {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 23px;
+.title {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
 }
-</style>
+
+h1 {
+	background-image: url(https://media.giphy.com/media/riw3K0D2h4klG/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+
+/* In case you're using another font do:
+text-transform: uppercase;
+for uppercase letters*/
+    </style>
 </head>
 <body>
+    <div class="title">
+        <h1>Leak Lab</h1>
+      </div>
+      
+
     <div class="buttons">
         <a href="/leaklab/pop.html"><button class="btn-hover color-1">Popular</button></a>
          <a href="/leaklab/all.html"><button class="btn-hover color-2">All</button></a>
      </div>
-    <div class="t">
-    <svg viewBox="0 0 600 300">
-        <!-- Symbol-->
-        <symbol id="s-text"><text text-anchor="middle" x="50%" y="50%" dy=".35em">Leak Lab</text></symbol><!-- Duplicate symbols-->
-        <use class="text" xlink:href="#s-text"></use>
-        <use class="text" xlink:href="#s-text"></use>
-        <use class="text" xlink:href="#s-text"></use>
-        <use class="text" xlink:href="#s-text"></use>
-        <use class="text" xlink:href="#s-text"></use>
-    </svg>
-</div>
 </body>
 </html>
